@@ -2,7 +2,7 @@
 {% block footer %}
 
 -- If wrapper is loaded, make sure mpi wrappers are removed at unload
-local wrapper_path = os.getenv("COMPILER_WRAPPER_MPI_PATH")
+local wrapper_path = os.getenv("HPC_WRAPPER_MPI_PATH")
 
 if wrapper_path then
     prepend_path("PATH", wrapper_path)
